@@ -127,7 +127,7 @@ body{
 
 .wrapper .form_wrap .input_wrap .input{
 	border: 2px solid var(--secondary);
-	border-radius: 3px;
+	border-radius: 5px;
 	padding: 10px;
 	display: block;
 	width: 100%;	
@@ -171,6 +171,15 @@ body{
 
 .wrapper .btns_wrap .common_btns button.btn_back{
 	background: var(--secondary);
+	border-radius: 20px;
+}
+
+.wrapper .btns_wrap .common_btns button.btn_next{
+	border-radius: 20px;
+}
+
+.wrapper .btns_wrap .common_btns button.btn_done{
+	border-radius: 20px;
 }
 
 .wrapper .btns_wrap .common_btns button.btn_next .icon{
