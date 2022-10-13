@@ -45,28 +45,25 @@
 			<form>
 				<div class="form_container">
 					<div class="input_wrap">
-						<label for="first_name"></label>
+						<label for="first_name">First Name</label>
 						<input type="text" name="First Name" class="input" id="first_name" placeholder="First Name">
 					</div>
 					<div class="input_wrap">
-						<label for="last_name"></label>
+						<label for="last_name">Last Name</label>
 						<input type="text" name="Surname" class="input" id="surname" placeholder="Surname">
 					</div>
 					<div class="input_wrap">
-						<label for="other_name"></label>
+						<label for="other_name">Other Names</label>
 						<input type="text" name="Other Names" class="input" id="other_name" placeholder="Other Names">
 					</div>
 					<div class="input_wrap">
-						<label for="email"></label>
+						<label for="email">Email Address</label>
 						<input type="text" name="Email Address" class="input" id="email" placeholder="Email Address">
 					</div>
 					<div class="input_wrap">
-						<label for="phone"></label>
-  						<input type="tel" id="phone" name="phone" placeholder="080 1234 5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+						<label for="phone">Phone</label>
+  						<input type="tel" id="phone" name="phone" class="input" placeholder="080 1234 5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
 					</div>
-					
-					
-						
 				</div>
 			</form>
 		</div>
@@ -74,56 +71,52 @@
 		<div class="form_2 data_info" style="display: none;">
 			<h2>Step 2 :Personal Info</h2>
 			<form>
-
-				
-
-				<div class="form_container">
-					<div >
-						<label for="gender"></label>
-						<select name="gender" class="dropdown">
-						<option value="none" selected>Gender</option>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
-						</select>
-	
-					</div>
-				<div>
-					<label for="bloodgroup"> </label>
-						<select name="bloodgroup">
-						<option value="none" selected>Blood Group</option>
-						<option value="A+">A+</option>
-						<option value="A-">A-</option>
-						<option value="AB+">AB+</option>
-						<option value="AB-">AB-</option>
-						<option value="B+">B+</option>
-						<option value="B-">B-</option>
-						<option value="O+">O+</option>
-						<option value="O-">O-</option>
-						<option value="N/A">N/A</option>
-						</select>
+                <div class="form_container">
+					<div class="input_wrap">
+                        <label for="gender">Gender</label>
+                        <select name="gender" class="input" id="gender" class="dropdown" required>
+                            <option value="none" selected>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="bloodgroup">Blood Group </label>
+                            <select name="bloodgroup" class="input">
+                                <option value="none" selected>Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="N/A">N/A</option>
+                            </select>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="maritalstatus">Marital status </label>
+                            <select name="marital status" class="input">
+                                <option value="none" selected>Marital status</option>
+                                <option value="Singe">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Divorced">Divorced</option>
+                                <option value="Widowed">Widowed</option>
+                                <option value="Separated">Separated</option>
+                                <option value="N/A">N/A</option>
+                            </select>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="Religion">Religion </label>
+                            <select name="Religion" class="input">
+                                <option value="none" selected>Religion</option>
+                                <option value="Singe">Christianity</option>
+                                <option value="Married">Islam</option>
+                                <option value="N/A">Other</option>
+                            </select>
+                    </div>
 				</div>
-				<div>
-					<label for="maritalstatus">Marital status </label>
-						<select name="marital status">
-						<option value="none" selected></option>
-						<option value="Singe">Single</option>
-						<option value="Married">Married</option>
-						<option value="Divorced">Divorced</option>
-						<option value="Widowed">Widowed</option>
-						<option value="Separated">Separated</option>
-						<option value="N/A">N/A</option>
-						</select>
-				</div>
-				<div>
-					<label for="Religion">Religion </label>
-						<select name="Religion">
-						<option value="none" selected></option>
-						<option value="Singe">Christianity</option>
-						<option value="Married">Islam</option>
-						<option value="N/A">Other</option>
-						</select>
-				</div>
-					
 				
 			</form>
 		</div>
