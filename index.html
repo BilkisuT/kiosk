@@ -73,33 +73,51 @@
 		<div class="form_2 data_info" style="display: none;">
 			<h2>Step 2 :Personal Info</h2>
 			<form>
-
-				
-
-				<div class="form_container">
-					<div >
-						<label for="gender"></label>
-						<select name="gender" class="dropdown">
-						<option value="none" selected>Gender</option>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
-						</select>
-	
-					</div>
-				<div>
-					<label for="bloodgroup"> </label>
-						<select name="bloodgroup">
-						<option value="none" selected>Blood Group</option>
-						<option value="A+">A+</option>
-						<option value="A-">A-</option>
-						<option value="AB+">AB+</option>
-						<option value="AB-">AB-</option>
-						<option value="B+">B+</option>
-						<option value="B-">B-</option>
-						<option value="O+">O+</option>
-						<option value="O-">O-</option>
-						<option value="N/A">N/A</option>
-						</select>
+                <div class="form_container">
+					<div class="input_wrap">
+                        <label for="gender"></label>
+                        <select name="gender" class="input" id="gender" class="dropdown" required>
+                            <option value="none" selected>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="bloodgroup"></label>
+                            <select name="bloodgroup" class="input">
+                                <option value="none" selected>Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="N/A">N/A</option>
+                            </select>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="maritalstatus"></label>
+                            <select name="marital status" class="input">
+                                <option value="none" selected>Marital status</option>
+                                <option value="Singe">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Divorced">Divorced</option>
+                                <option value="Widowed">Widowed</option>
+                                <option value="Separated">Separated</option>
+                                <option value="N/A">N/A</option>
+                            </select>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="Religion"></label>
+                            <select name="Religion" class="input">
+                                <option value="none" selected>Religion</option>
+                                <option value="Singe">Christianity</option>
+                                <option value="Married">Islam</option>
+                                <option value="N/A">Other</option>
+                            </select>
+                    </div>
 				</div>
 				<div>
 					<label for="maritalstatus"> </label>
@@ -210,7 +228,7 @@
 		</div>
 		<div class="common_btns form_3_btns" style="display: none;">
 			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
-			<button type="button" class="btn_done">Done</button>
+			<button type="button" class="btn_done">Finished</button>
 		</div>
 	</div>
 </div>
