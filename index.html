@@ -31,12 +31,55 @@
 	</div>
 	<div class="form_wrap">
 		<div class="form_1 data_info">
-			<h2>Signup Info</h2>
+			<h2>Step 1 :Personal Information</h2>
 			<form>
 				<div class="form_container">
 					<div class="input_wrap">
-						<label for="email">Email Address</label>
-						<input type="text" name="Email Address" class="input" id="email">
+						<label for="first_name"></label>
+						<input type="text" name="First Name" class="input" id="first_name" placeholder="First Name">
+					</div>
+					<div class="input_wrap">
+						<label for="last_name"></label>
+						<input type="text" name="Surname" class="input" id="surname" placeholder="Surname">
+					</div>
+					<div class="input_wrap">
+						<label for="other_name"></label>
+						<input type="text" name="Other Names" class="input" id="other_name" placeholder="Other Names">
+					</div>
+					<div class="input_wrap">
+						<label for="email"></label>
+						<input type="text" name="Email Address" class="input" id="email" placeholder="Email Address">
+					</div>
+					<div class="input_wrap">
+						<label for="phone"></label>
+  						<input type="tel" id="phone" name="phone" placeholder="080 1234 5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+					</div>
+					<div >
+						<label for="gender"></label>
+						<select name="gender" class="dropdown">
+						<option value="none" selected>Gender</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						</select>
+
+					</div>
+					
+						
+				</div>
+			</form>
+		</div>
+
+		<div class="form_2 data_info" style="display: none;">
+			<h2>Step 1 :Personal Info</h2>
+			<form>
+				<div class="form_container">
+					<div class="input_wrap">
+						<label for="first_name">First Name</label>
+						<input type="text" name="First Name" class="input" id="first_name" placeholder="First Name">
+					</div>
+					<div class="input_wrap">
+						<label for="last_name">Last Name</label>
+						<input type="text" name="Last Name" class="input" id="last_name">
 					</div>
 					<div class="input_wrap">
 						<label for="password">Password</label>
@@ -45,25 +88,6 @@
 					<div class="input_wrap">
 						<label for="confirm_password">Confirm Password</label>
 						<input type="password" name="confirm password" class="input" id="confirm_password">
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="form_2 data_info" style="display: none;">
-			<h2>Personal Info</h2>
-			<form>
-				<div class="form_container">
-					<div class="input_wrap">
-						<label for="user_name">User Name</label>
-						<input type="text" name="User Name" class="input" id="user_name">
-					</div>
-					<div class="input_wrap">
-						<label for="first_name">First Name</label>
-						<input type="text" name="First Name" class="input" id="first_name">
-					</div>
-					<div class="input_wrap">
-						<label for="last_name">Last Name</label>
-						<input type="text" name="Last Name" class="input" id="last_name">
 					</div>
 				</div>
 			</form>
