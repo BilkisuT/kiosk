@@ -63,8 +63,8 @@ form_3_back_btn.addEventListener("click", function(){
 	form_2.style.display = "block";
 	form_3.style.display = "none";
 
-	form_3_btns.style.display = "none";
-	form_2_btns.style.display = "flex";
+	form_2_btns.style.display = "none";
+	form_3_btns.style.display = "flex";
 
 	form_3_progessbar.classList.remove("active");
 });
