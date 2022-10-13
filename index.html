@@ -64,15 +64,7 @@
 						<label for="phone"></label>
   						<input type="tel" id="phone" name="phone" placeholder="080 1234 5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
 					</div>
-					<div >
-						<label for="gender"></label>
-						<select name="gender" class="dropdown">
-						<option value="none" selected>Gender</option>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
-						</select>
-
-					</div>
+					
 					
 						
 				</div>
@@ -80,26 +72,59 @@
 		</div>
 
 		<div class="form_2 data_info" style="display: none;">
-			<h2>Step 1 :Personal Info</h2>
+			<h2>Step 2 :Personal Info</h2>
 			<form>
+
+				
+
 				<div class="form_container">
-					<div class="input_wrap">
-						<label for="first_name">First Name</label>
-						<input type="text" name="First Name" class="input" id="first_name" placeholder="First Name">
+					<div >
+						<label for="gender"></label>
+						<select name="gender" class="dropdown">
+						<option value="none" selected>Gender</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						</select>
+	
 					</div>
-					<div class="input_wrap">
-						<label for="last_name">Last Name</label>
-						<input type="text" name="Last Name" class="input" id="last_name">
-					</div>
-					<div class="input_wrap">
-						<label for="password">Password</label>
-						<input type="password" name="password" class="input" id="password">
-					</div>
-					<div class="input_wrap">
-						<label for="confirm_password">Confirm Password</label>
-						<input type="password" name="confirm password" class="input" id="confirm_password">
-					</div>
+				<div>
+					<label for="bloodgroup"> </label>
+						<select name="bloodgroup">
+						<option value="none" selected>Blood Group</option>
+						<option value="A+">A+</option>
+						<option value="A-">A-</option>
+						<option value="AB+">AB+</option>
+						<option value="AB-">AB-</option>
+						<option value="B+">B+</option>
+						<option value="B-">B-</option>
+						<option value="O+">O+</option>
+						<option value="O-">O-</option>
+						<option value="N/A">N/A</option>
+						</select>
 				</div>
+				<div>
+					<label for="maritalstatus">Marital status </label>
+						<select name="marital status">
+						<option value="none" selected></option>
+						<option value="Singe">Single</option>
+						<option value="Married">Married</option>
+						<option value="Divorced">Divorced</option>
+						<option value="Widowed">Widowed</option>
+						<option value="Separated">Separated</option>
+						<option value="N/A">N/A</option>
+						</select>
+				</div>
+				<div>
+					<label for="Religion">Religion </label>
+						<select name="Religion">
+						<option value="none" selected></option>
+						<option value="Singe">Christianity</option>
+						<option value="Married">Islam</option>
+						<option value="N/A">Other</option>
+						</select>
+				</div>
+					
+				
 			</form>
 		</div>
 		<div class="form_3 data_info" style="display: none;">
