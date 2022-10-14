@@ -24,6 +24,7 @@ var form_5_back_btn = document.querySelector(".form_5_btns .btn_back");
 var form_2_progessbar = document.querySelector(".form_2_progessbar");
 var form_3_progessbar = document.querySelector(".form_3_progessbar");
 var form_4_progessbar = document.querySelector(".form_4_progessbar");
+var form_5_progessbar = document.querySelector(".form_5_progessbar");
 
 var btn_done = document.querySelector(".btn_done");
 var modal_wrapper = document.querySelector(".modal_wrapper");
@@ -63,8 +64,8 @@ form_3_back_btn.addEventListener("click", function(){
 	form_2.style.display = "block";
 	form_3.style.display = "none";
 
-	form_2_btns.style.display = "none";
-	form_3_btns.style.display = "flex";
+	form_3_btns.style.display = "none";
+	form_2_btns.style.display = "flex";
 
 	form_3_progessbar.classList.remove("active");
 });
@@ -83,8 +84,8 @@ form_4_back_btn.addEventListener("click", function(){
 	form_3.style.display = "block";
 	form_4.style.display = "none";
 
-	form_3_btns.style.display = "none";
-	form_4_btns.style.display = "flex";
+	form_4_btns.style.display = "none";
+	form_3_btns.style.display = "flex";
 
 	form_4_progessbar.classList.remove("active");
 });

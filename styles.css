@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root{
+<<<<<<< Updated upstream
 	--primary: rgb(35, 30, 108);
+=======
+	--primary: midnightblue;
+>>>>>>> Stashed changes
 	--secondary: #9c9fa6;
 	--white: #fff;
 	--text-clr: #5b6475;
