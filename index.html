@@ -4,6 +4,22 @@
 	<title>Kiosk | BUH Registeration</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <script>
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'db79f6baeamshf5ef85eae9c9c9cp1403c6jsn6259b34b1bff',
+                'X-RapidAPI-Host': 'nigeria-states-and-lga.p.rapidapi.com'
+            }
+        };
+        
+        fetch('https://nigeria-states-and-lga.p.rapidapi.com/lgalists', options)
+            .then(response => response.json())
+            .then(response => console.log(response))
+            .catch(err => console.error(err));
+    </script>
+
 </head>
 <body>
 
@@ -45,11 +61,7 @@
 					</div>
 					<div class="input_wrap">
 						<label for="last_name"></label>
-<<<<<<< Updated upstream
 						<input type="text" name="Surname" class="input" id="surname" placeholder="Surname" required>
-=======
-						<input type="text" name="Surname" class="input" id="surname" placeholder="Surname">
->>>>>>> Stashed changes
 					</div>
 					<div class="input_wrap">
 						<label for="other_name"></label>
@@ -61,11 +73,7 @@
 					</div>
 					<div class="input_wrap">
 						<label for="phone"></label>
-<<<<<<< Updated upstream
-  						<input type="tel" id="phone" class="input" name="phone" placeholder="080 1234 5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
-=======
   						<input type="tel" id="phone" name="phone" class="input" placeholder="080 1234 5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
->>>>>>> Stashed changes
 					</div>
 					
 					
@@ -122,24 +130,12 @@
                             </select>
                     </div>
 				</div>
-<<<<<<< Updated upstream
-				
-=======
->>>>>>> Stashed changes
-
 			</form>
 		</div>
 		<div class="form_3 data_info" style="display: none;">
 			<h2>Address</h2>
 			<form>
 				<div class="form_container">
-<<<<<<< Updated upstream
-					
-					<div class="input_wrap" >
-						<label  for="Nationality"></label>
-							<select name="Nationality" class="input" >
-							<option value="none" selected>Nationality</option>
-=======
 					<div class="input_wrap">
 						<label class="input_wrap" for="Residential Address">Residential Address</label>
 						<input type="text" name="Residential Address" class="input" id="residentialAddress">
@@ -401,18 +397,6 @@
 							</select>
 					</div>
 					<div class="input_wrap">
-<<<<<<< Updated upstream
-						<label  for="State"> </label>
-							<select name="State" class="input">
-							<option value="none" selected>State</option>
-							
-							</select>
-					</div>
-					<div class="input_wrap">
-						<label  for="LGA"></label>
-							<select name="LGA" class="input">
-							<option value="none" selected>Local Government</option>
-=======
 						<label  for="State"></label>
 							<select class="input" name="State">
 							    <option value="Select State" selected>Select State</option>
@@ -469,11 +453,7 @@
 					</div>
 					<div class="input_wrap">
 						<label for="Office Address"></label>
-<<<<<<< Updated upstream
-						<input type="text" name="Office Address" class="input" id="OfficeAddress" placeholder="Office address">
-=======
 						<input type="text" name="Office Address" class="input" id="OfficeAddress" placeholder="Office Address">
->>>>>>> Stashed changes
 					</div>
 				</div>
 			</form>
@@ -502,8 +482,6 @@
 					<div class="input_wrap">
 						<label for="phone"></label>
 						  <input type="tel" id="phone" name="phone" class="input" placeholder="080 1234 5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
-<<<<<<< Updated upstream
-=======
 					</div>
 				</div>
 			</form>
@@ -515,7 +493,6 @@
 					<div class="input_wrap">
 						<label for="image"></label>
                         <input id="file" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" class="input" name="fileToUpload" type="file" />
->>>>>>> Stashed changes
 					</div>
 				</div>
 			</form>
@@ -536,8 +513,6 @@
 		<div class="common_btns form_3_btns" style="display: none;">
 			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
 			<button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
-<<<<<<< Updated upstream
-=======
 		</div>
         <div class="common_btns form_4_btns" style="display: none;">
 			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
@@ -546,7 +521,6 @@
         <div class="common_btns form_5_btns" style="display: none;">
 			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
 			<button type="button" class="btn_done">Finished</button>
->>>>>>> Stashed changes
 		</div>
 		<!-- <div class="common_btns form_4_btns" style="display: none;">
 			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
