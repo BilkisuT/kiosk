@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Appointment | BUH Kiosk</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <script>
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'db79f6baeamshf5ef85eae9c9c9cp1403c6jsn6259b34b1bff',
+                'X-RapidAPI-Host': 'nigeria-states-and-lga.p.rapidapi.com'
+            }
+        };
+        
+        fetch('https://nigeria-states-and-lga.p.rapidapi.com/lgalists', options)
+            .then(response => response.json())
+            .then(response => console.log(response))
+            .catch(err => console.error(err));
+    </script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <a href="index.html"><img src="assets/logo.png" class="logo" alt="logo"></a>
+	<!-- <div class="header">
+		<ul>
+			<li class="active form_1_progessbar">
+				<div>
+					<p>1</p>
+				</div>
+			</li>
+			<li class="form_2_progessbar">
+				<div>
+					<p>2</p>
+				</div>
+			</li>
+			<li class="form_3_progessbar">
+				<div>
+					<p>3</p>
+				</div>
+			</li>
+            <li class="form_4_progessbar">
+				<div>
+					<p>4</p>
+				</div>
+			</li>
+            <li class="form_5_progessbar">
+				<div>
+					<p>5</p>
+				</div>
+			</li>
+		</ul>
+	</div> -->
+
+	<div class="form_wrap">
+		<div class="form_1 data_info">
+			<h2>Appointment</h2>
+			<form>
+				<div class="form_container">
+					<div class="input_wrap">
+						<label for="specialty"></label>
+                        <select name="specialty" class="input" id="specialty" required>
+                            <option>Select Specialty</option>
+                            <option>Specialty A</option>
+                            <option>Specialty B</option>
+                        </select>
+                    </div>
+					<div class="input_wrap">
+						<label for="doctor"></label>
+                        <select name="doctor" class="input" id="doctor">
+                            <option>Select Doctor</option>
+                            <option>Dr A</option>
+                            <option>Dr B</option>
+                        </select>
+                    </div>
+					<div class="input_wrap">
+						<label for="first_name"></label>
+						<input type="text" name="First Name" class="input" id="first_name" placeholder="First Name" required>
+                    </div>
+                    <div class="input_wrap">
+						<label for="last_name"></label>
+						<input type="text" name="Surname" class="input" id="last_name" placeholder="Surname" required>
+					</div>
+					<div class="input_wrap">
+						<label for="email"></label>
+						<input type="text" name="Email Address" class="input" id="email" placeholder="Email Address" required>
+					</div>
+					<div class="input_wrap">
+						<label for="phone"></label>
+  						<input type="tel" id="phone" name="phone" class="input" placeholder="080 1234 5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+					</div>
+                    <div class="input_wrap">
+						<label for="time"></label>
+						<input type="time" name="Preferred Time" class="input" id="time" placeholder="Preferred Time" required>
+					</div>
+					<div class="input_wrap">
+						<label for="comment"></label>
+  						<textarea id="comment" name="comment" class="input" placeholder="Comment" rows="5" required></textarea>
+					</div>
+
+
+                    <div class="input_wrap">
+                        <label for="aven9ers"></label>
+                        <textarea name="ops" id="ops" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="unknownt"></label>
+                        <input type="text" name="bops" id="bops">
+                    </div>
+                    <div class="input_wrap">
+                        <label for="werey"></label>
+                        <input type="text" name="werey" id="werey" />
+                    </div>
+                    <div class="input_wrap">
+                        <label for="edey"></label>
+                        <input type="button" name="edey" id="edey" />
+                    </div>
+                    <div class="input_wrap">
+                        <label for="iloveme"></label>
+                        <marquee behavior="Angola" direction="left"></marquee>
+                    </div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="btns_wrap">
+		<div class="appointment_btn">
+			<button type="button" class="btn_appointment">Book Appointment</button>
+		</div>
+	</div>
+
+</div>
+
+    <div class="modal_wrapper">
+        <div class="shadow"></div>
+        <div class="success_wrap">
+            <span class="modal_icon"><ion-icon name="checkmark-sharp"></ion-icon></span>
+            <p>You have successfully Booked an appointment! Your Ticket is ready.</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+</body>
+</html>

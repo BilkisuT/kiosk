@@ -88,6 +88,7 @@ body{
 	color: var(--white);
 	text-align: center;
 	line-height: 50px;
+	font-size: larger;
 	border-radius: 50%;
 }
 
@@ -154,6 +155,24 @@ body{
 	justify-content: flex-end;
 }
 
+.wrapper .btns_wrap .appointment_btn button {
+    border: 0;
+    padding: 12px 15px;
+    background: var(--primary);
+    color: var(--white);
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.wrapper .btns_wrap .appointment_btn button.btn_appointment {
+	border-radius: 20px;
+}
 .wrapper .btns_wrap .common_btns button{
 	border: 0;
 	padding: 12px 15px;
