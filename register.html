@@ -5,6 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+
+
     <script>
         const options = {
             method: 'GET',
@@ -503,7 +506,43 @@ fetch('https://nigeria-states-and-lga.p.rapidapi.com/lgalists', options)
 				</div>
 			</form> -->
 
-            <form class="form" id="pay-form">
+            <form>
+                <div>
+                  Your order is ₦54,600
+                </div>
+                <!-- <button type="button" id="start-payment-button" onclick="makePayment()">Pay Now</button> -->
+                <button type="button" onclick="makePayment()">Pay Now</button>
+
+            </form>
+
+            <script>
+                function makePayment() {
+                  FlutterwaveCheckout({
+                    public_key: "FLWPUBK_TEST-8c19c1a79cde96dde1c0303d069aca1e-X",
+                    tx_ref: "titanic-48981487343MDI0NzMx",
+                    amount: 10000,
+                    currency: "NGN",
+                    payment_options: "card, banktransfer, ussd",
+                    redirect_url: "https://glaciers.titanic.com/handle-flutterwave-payment",
+                    meta: {
+                      consumer_id: 23,
+                      consumer_mac: "92a3-912ba-1192a",
+                    },
+                    customer: {
+                      email: "adnan.baba-ahmed@bazeuniversity.edu.ng",
+                      phone_number: "08102909304",
+                      name: "Rose DeWitt Bukater",
+                    },
+                    customizations: {
+                      title: "BUH",
+                      description: "Payment for an awesome cruise",
+                      logo: "https://www.logolynx.com/images/logolynx/22/2239ca38f5505fbfce7e55bbc0604386.jpeg",
+                    },
+                  });
+                }
+              </script>
+
+            <!-- <form class="form" id="pay-form">
 				<div class="form_container">
                     <div id="alert-holder"></div>
 					
@@ -515,9 +554,9 @@ fetch('https://nigeria-states-and-lga.p.rapidapi.com/lgalists', options)
 						  <input class="input" id="amount-in-naira" required="required" type="number" step="100" placeholder="10,000" value="10000" disabled>
 					</div>
 
-                    <!-- <button class="btn btn-secondary" type="button"class="btn_next" onclick="validateAndPay()"> Pay </button> -->
+                    <button class="btn btn-secondary" type="button"class="btn_next" onclick="validateAndPay()"> Pay </button>
 				</div>
-			</form>
+			</form> -->
 
             
 		</div>
